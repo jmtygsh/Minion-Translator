@@ -1,0 +1,20 @@
+#txt-input {
+    width: 90%;
+    height: 10vh;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#txt-output {
+    text-align: center;
+    color: red;
+}
+
+#output {
+    width: 90%;
+    height: 10vh;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
