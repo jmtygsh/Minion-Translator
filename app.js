@@ -5,11 +5,31 @@ let clearBtnAll = document.querySelector("#btn-clear-all");
 let clearBtn = document.querySelector("#btn-clear");
 
 
+let serverUrl = "https://api.funtranslations.com/translate/minion.json"
+
+function getTranslationUrl(text) {
+    return serverUrl + "?" + "text=" + text
+}
+
+
 //Translate 
 btnTranslator.addEventListener("click", clickHandler);
 
 function clickHandler() {
-    outPut.innerHTML = txtInput.value;
+    var gettingText = txtInput.value
+
+    fetch(getTranslationUrl(gettingText))
+        .then(response => response.json())
+        .then(json => {
+            outPut.innerText = json.contents.translated;
+        })
+        .catch(errorHandler)
+};
+
+
+//Server Error Handler 
+function errorHandler(error) {
+    console.log("Error", error)
 }
 
 
@@ -28,5 +48,3 @@ clearBtn.addEventListener("click", clearFun);
 function clearFun() {
     outPut.innerHTML = "";
 }
-
-

@@ -1,20 +1,106 @@
-#txt-input {
-    width: 90%;
-    height: 10vh;
-    display: block;
-    margin: 1rem;
-    padding: 1rem;
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); 
+
+:root {
+    font-family: 'Kalam', cursive;
+    --primary-color:#F2C94C;
+    --secondary-color:#1010ef;
+    --general-color: #fff;
+    --button-color:rgb(0, 147, 32);
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-heading {
+    background-color: var(--primary-color);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+
+.btn-all {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+#btn-translate {
+    padding: 8px;
+    border-radius: 0.4rem;
+    background-color: var(--secondary-color);
+    color: var(--general-color);
+}
+
+#btn-clear-all {
+    padding: 8px;
+    border-radius: 0.4rem;
+    background-color: var(--secondary-color);
+    color: var(--general-color);
+}
+
+#btn-clear {
+    padding: 8px;
+    border-radius: 0.4rem;
+    background-color: var(--secondary-color);
+    color: var(--general-color);
+}
+
+#txt-input {
+    width: 50%;
+    height: 25vh;
+    display: block;
+    margin:  auto;
+    padding: 1rem;
+    background-image: url(img.svg);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-size: 60px;
+    opacity: 1.0;
+    background-position-y: center;
+}
+
+
+#background-img {
+    background-repeat: no-repeat;
+}
+
 
 #txt-output {
     text-align: center;
     color: red;
+    margin-bottom: 15px;
 }
 
 #output {
-    width: 90%;
-    height: 10vh;
+    width: 50%;
+    height: 25vh;
     border: 1px solid black;
-    margin: 1rem;
+    margin: auto;
     padding: 1rem;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+/* hover button */
+
+
+#btn-translate:hover {
+    background-color: var(--button-color);
+}
+
+#btn-clear-all:hover {
+    background-color: var(--button-color);
+}
+
+#btn-clear:hover {
+    background-color: var(--button-color);
 }
