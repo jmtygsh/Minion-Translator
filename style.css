@@ -64,6 +64,13 @@
     background-position-y: center;
 }
 
+@media only screen and (min-device-width : 320px){
+    #txt-input::placeholder{
+        color: rgb(224, 223, 223) !important; 
+    }
+      
+}
+
 
 #background-img {
     background-repeat: no-repeat;
@@ -91,8 +98,6 @@
 
 
 /* hover button */
-
-
 #btn-translate:hover {
     background-color: var(--button-color);
 }
