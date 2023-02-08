@@ -64,12 +64,11 @@
     background-position-y: center;
 }
 
-@media only screen and (min-device-width : 320px){
+@media only screen and (max-width: 600px) {
     #txt-input::placeholder{
         color: rgb(224, 223, 223) !important; 
     }
-      
-}
+  }
 
 
 #background-img {
@@ -89,6 +88,7 @@
     border: 1px solid black;
     margin: auto;
     padding: 1rem;
+    overflow: auto;
 }
 
 .footer {
